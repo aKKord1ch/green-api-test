@@ -1,0 +1,51 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  padding: 24px 16px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(63, 169, 245, 0.25), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(123, 63, 242, 0.25), transparent 45%),
+    var(--color-chat-bg);
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  padding: 32px 28px;
+  border-radius: 24px;
+  background: var(--color-surface);
+  box-shadow: 0 16px 48px rgba(20, 24, 60, 0.12);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 20px;
+  background: var(--gradient-brand);
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.title {
+  margin: 0 0 6px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0 0 24px;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  text-align: center;
+}
+
+.subtitle a {
+  color: var(--color-accent);
+}

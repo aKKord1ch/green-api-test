@@ -1,0 +1,13 @@
+.button {
+  display: flex;
+  padding: 9px;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--color-accent-soft-hover);
+}

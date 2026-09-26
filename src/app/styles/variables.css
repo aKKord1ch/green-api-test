@@ -1,0 +1,28 @@
+/* Палитра по мотивам web.max.ru */
+:root {
+  --gradient-brand: linear-gradient(135deg, #3fa9f5 0%, #7b3ff2 100%);
+
+  --color-accent: #5a4ff5;
+  --color-accent-hover: #4a3fe6;
+  --color-accent-soft: #eeedff;
+  --color-accent-soft-hover: #e2e0ff;
+
+  --color-text: #151823;
+  --color-text-secondary: #7a7f8f;
+
+  --color-surface: #ffffff;
+  --color-surface-alt: #f4f5f8;
+  --color-border: #e8e9ef;
+  --color-hover: #f2f3f7;
+
+  --color-chat-bg: #eef0f6;
+  --color-chat-dots: #dfe2ec;
+  --color-bubble-in: #ffffff;
+  --color-bubble-out: #e1ddff;
+
+  --color-danger: #e5484d;
+  --color-danger-soft: #fdecec;
+  --color-warning-soft: #fff5e0;
+
+  color-scheme: light;
+}

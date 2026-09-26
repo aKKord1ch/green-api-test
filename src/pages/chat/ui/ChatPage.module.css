@@ -1,0 +1,30 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(300px, 380px) 1fr;
+  height: 100%;
+}
+
+.sidebar,
+.content {
+  min-width: 0;
+  min-height: 0;
+}
+
+/* На узких экранах показываем либо список чатов, либо открытый чат. */
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    display: none;
+  }
+
+  .chatOpen .sidebar {
+    display: none;
+  }
+
+  .chatOpen .content {
+    display: block;
+  }
+}
