@@ -15,7 +15,7 @@ export const useSessionStore = create<SessionState>()(
       login: (credentials) => set({ credentials }),
       logout: () => set({ credentials: null }),
     }),
-    { name: 'max-chat:session' },
+    { name: 'green-api-chat:session' },
   ),
 )
 

@@ -1,4 +1,5 @@
 import { LoginForm } from '@/features/auth'
+import { Icon } from '@/shared/ui'
 import styles from './LoginPage.module.css'
 
 export function LoginPage() {
@@ -6,9 +7,9 @@ export function LoginPage() {
     <main className={styles.page}>
       <div className={styles.card}>
         <div className={styles.logo} aria-hidden>
-          M
+          <Icon name="send" size={32} />
         </div>
-        <h1 className={styles.title}>Вход в MAX Chat</h1>
+        <h1 className={styles.title}>Вход в Telegram Chat</h1>
         <p className={styles.subtitle}>
           Введите данные инстанса из{' '}
           <a href="https://console.green-api.com" target="_blank" rel="noreferrer">

@@ -39,7 +39,7 @@ export const useMessageStore = create<MessageState>()(
       reset: () => set({ byChat: {} }),
     }),
     {
-      name: 'max-chat:messages',
+      name: 'green-api-chat:messages',
       // Сообщения, «зависшие» в отправке при перезагрузке страницы, считаем неотправленными.
       merge: (persisted, current) => {
         const byChat = (persisted as Partial<MessageState> | undefined)?.byChat ?? {}

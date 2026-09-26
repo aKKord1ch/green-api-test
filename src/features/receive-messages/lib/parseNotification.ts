@@ -10,7 +10,7 @@ export interface IncomingTextMessage {
   timestamp: number
 }
 
-/** Групповые чаты MAX имеют отрицательный chatId, WhatsApp-подобные — суффикс @g.us. */
+/** Групповые чаты имеют отрицательный числовой chatId либо суффикс @g.us. */
 function isGroupChat(chatId: string) {
   return chatId.startsWith('-') || chatId.endsWith('@g.us')
 }

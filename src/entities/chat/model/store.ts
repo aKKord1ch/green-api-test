@@ -29,7 +29,7 @@ export const useChatStore = create<ChatState>()(
       setActiveChat: (activeChatId) => set({ activeChatId }),
       reset: () => set({ chats: [], activeChatId: null }),
     }),
-    { name: 'max-chat:chats' },
+    { name: 'green-api-chat:chats' },
   ),
 )
 

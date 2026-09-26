@@ -28,7 +28,7 @@ export function ChatWindow() {
   }
 
   const title = getChatTitle(chat)
-  const subtitle = chat.phone && chat.name ? formatPhone(chat.phone) : 'MAX'
+  const subtitle = chat.phone && chat.name ? formatPhone(chat.phone) : 'Telegram'
 
   return (
     <section className={styles.window}>
@@ -50,7 +50,7 @@ export function ChatWindow() {
       <div className={styles.messages}>
         <div className={styles.messagesInner}>
           {messages.length === 0 && (
-            <p className={styles.empty}>Напишите первое сообщение — оно придёт получателю в MAX</p>
+            <p className={styles.empty}>Напишите первое сообщение — оно придёт получателю в Telegram</p>
           )}
           {messages.map((message) => (
             <MessageBubble key={message.id} message={message} />

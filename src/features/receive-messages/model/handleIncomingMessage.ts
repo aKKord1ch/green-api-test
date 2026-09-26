@@ -4,7 +4,7 @@ import type { IncomingTextMessage } from '../lib/parseNotification'
 
 /**
  * Кладёт входящее сообщение в нужный чат.
- * В MAX ответ приходит с числовым chatId, а чат создавался по номеру телефона,
+ * Ответ может прийти с числовым chatId, а чат создавался по номеру телефона,
  * поэтому сопоставляем по senderPhoneNumber и запоминаем настоящий chatId.
  */
 export function handleIncomingMessage(message: IncomingTextMessage) {
